@@ -1,0 +1,100 @@
+/* https://alligator.io/css/pure-css-parallax/ */
+
+.cta-hero {
+    height: 98vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+
+    & .logo {
+        width: 100%;
+        max-width: 50vh;
+        max-height: 50vh;
+    }
+    & p {
+        text-align: center;
+    }
+    & button {
+        font-size: .65em;
+        color: white;
+        margin: 2em auto;
+        background: #6eba01;
+        
+    }
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4);
+}
+
+
+.parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+  }
+
+  .bg1 {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* Move the pseudo-element back away from the camera,
+        * then scale it back up to fill the viewport.
+        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+        transform: translateZ(-1px) scale(1.5);
+        /* Force the background image to fill the whole element. */
+        background-size: 100%;
+        /* Keep the image from overlapping sibling elements. */
+
+        background-image: linear-gradient(180deg,rgba(45,120,140,0.99) 25%,rgba(47,126,150,0.53) 100%);
+        background-size: 100%;
+        opacity: .6; 
+    }
+
+    &::after {
+        background-image: url("../../assets/imgs/dogancan-ozturan-640.jpg");
+        /* Full height */
+        height: 100%; 
+    
+        /* Center and scale the image nicely */
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+  
+
+
+
+
