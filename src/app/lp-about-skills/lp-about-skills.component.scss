@@ -1,0 +1,16 @@
+
+.skills {
+    text-align: center;
+    max-width: 65%;
+
+    & p {
+        text-align: center;
+        margin: 0 auto; 
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .skills {
+        margin: 0 auto; 
+    }
+}

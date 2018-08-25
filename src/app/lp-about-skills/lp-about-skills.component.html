@@ -1,3 +1,9 @@
-<p>
-  lp-about-skills works!
-</p>
+<section>
+  <div fxLayout="row wrap" fxLayoutGap="2.5%" fxLayout.lt-md="column">
+    <div class="skills" *ngFor="let skill of skills" fxFlex="30%">
+      <h4>{{skill.title}}</h4>
+      <p>{{skill.desc}}</p>
+
+    </div>
+  </div>
+</section>
