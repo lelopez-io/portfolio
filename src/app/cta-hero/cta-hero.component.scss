@@ -1,11 +1,8 @@
 /* https://alligator.io/css/pure-css-parallax/ */
 
 .cta-hero {
-    height: 99vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
     padding: 0;
+    font-size: 1.15em;
 }
 
 .content {
@@ -14,8 +11,8 @@
 
     & .logo {
         width: 100%;
-        max-width: 50vh;
-        max-height: 50vh;
+        max-width: 640px;
+        max-height: 640px;
     }
     & p {
         margin: 0;
@@ -23,8 +20,8 @@
     }
     & button {
         font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif!important;
-        font-size: .5em;
-        font-weight: 100;
+        font-size: .55em;
+        font-weight: 200;
         letter-spacing: .2em;
         margin: 2em auto;
         padding: 0 2em;
@@ -40,9 +37,7 @@
             background: white;
             border-radius: unset;
             transition: all 0.3s ease 0s;
-            
         }
-        
     }
 }
 

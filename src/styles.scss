@@ -3,14 +3,16 @@ body {
     text-align:center; 
     color:#000; 
     font-family:georgia, serif; 
-    font-size:120%; 
-    line-height:1.6;
+    font-size: 16px;
+    line-height: 1.9em;
     margin:0; 
     //padding:2em 2em 5em; 
     background:rgb(253, 253, 253);
     margin:auto;
     //max-width:33em;
-    color:rgb(10, 10, 10);
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform: translate3d(0,0,0);
   } 
   
   a {outline:none !important; font-weight:bold; text-decoration:none;}
