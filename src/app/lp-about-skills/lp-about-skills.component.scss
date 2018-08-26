@@ -10,10 +10,13 @@
 }
 
 [data-icon]:before {
+    color: #4e5ed0;
     font-family: elegantIons; /* BYO icon font, mapped smartly */
     content: attr(data-icon);
     speak: none; /* Not to be trusted, but hey. */
-  }
+}
+
+
 
 @media only screen and (max-width: 959px) {
     .skills {
