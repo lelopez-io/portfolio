@@ -11,6 +11,7 @@ import { CtaHeroTypingComponent } from './cta-hero-typing/cta-hero-typing.compon
 import { LpAboutComponent } from './lp-about/lp-about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LpAboutSkillsComponent } from './lp-about-skills/lp-about-skills.component';
+import { LpInfoComponent } from './lp-info/lp-info.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LpAboutSkillsComponent } from './lp-about-skills/lp-about-skills.compon
     CtaHeroTypingComponent,
     LpAboutComponent,
     LandingPageComponent,
-    LpAboutSkillsComponent
+    LpAboutSkillsComponent,
+    LpInfoComponent
   ],
   imports: [
     BrowserModule,
