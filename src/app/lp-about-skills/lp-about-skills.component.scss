@@ -9,6 +9,12 @@
     }
 }
 
+[data-icon]:before {
+    font-family: elegantIons; /* BYO icon font, mapped smartly */
+    content: attr(data-icon);
+    speak: none; /* Not to be trusted, but hey. */
+  }
+
 @media only screen and (max-width: 959px) {
     .skills {
         margin: 0 auto; 
