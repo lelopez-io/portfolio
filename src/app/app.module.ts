@@ -12,6 +12,7 @@ import { LpAboutComponent } from './lp-about/lp-about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LpAboutSkillsComponent } from './lp-about-skills/lp-about-skills.component';
 import { LpInfoComponent } from './lp-info/lp-info.component';
+import { LpPitchComponent } from './lp-pitch/lp-pitch.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LpInfoComponent } from './lp-info/lp-info.component';
     LpAboutComponent,
     LandingPageComponent,
     LpAboutSkillsComponent,
-    LpInfoComponent
+    LpInfoComponent,
+    LpPitchComponent
   ],
   imports: [
     BrowserModule,
