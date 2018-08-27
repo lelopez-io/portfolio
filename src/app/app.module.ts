@@ -14,6 +14,7 @@ import { LpAboutSkillsComponent } from './lp-about-skills/lp-about-skills.compon
 import { LpInfoComponent } from './lp-info/lp-info.component';
 import { LpPitchComponent } from './lp-pitch/lp-pitch.component';
 import { LpContactComponent } from './lp-contact/lp-contact.component';
+import { LpContactIconsComponent } from './lp-contact-icons/lp-contact-icons.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LpContactComponent } from './lp-contact/lp-contact.component';
     LpAboutSkillsComponent,
     LpInfoComponent,
     LpPitchComponent,
-    LpContactComponent
+    LpContactComponent,
+    LpContactIconsComponent
   ],
   imports: [
     BrowserModule,

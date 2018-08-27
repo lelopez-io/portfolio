@@ -148,6 +148,7 @@ button, input[type="submit"], input[type="reset"] {
   outline: inherit;
 }
 
-textarea {
+textarea, input {
   border: none;
+  max-width: 600px;
 }
