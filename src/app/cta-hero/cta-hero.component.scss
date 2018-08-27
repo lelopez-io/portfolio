@@ -1,12 +1,13 @@
 /* https://alligator.io/css/pure-css-parallax/ */
 
 .cta-hero {
-    
     padding: 0;
     font-size: 1.15em;
+    margin-bottom: 120px;
 }
 
 .content {
+    z-index: 1;
     text-align: center;
     font-size: 1.25em;
 
@@ -75,29 +76,8 @@
   }
 
   .bg1 {
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-
-        /* Move the pseudo-element back away from the camera,
-        * then scale it back up to fill the viewport.
-        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-        transform: translateZ(-1px) scale(1.5);
-        /* Force the background image to fill the whole element. */
-        background-size: 100%;
-        /* Keep the image from overlapping sibling elements. */
-
-        background-image: linear-gradient(180deg,rgba(45,120,140,0.99) 25%,rgba(47,126,150,0.53) 100%);
-        background-size: 100%;
-        opacity: .6; 
-    }
-
     &::after {
-        background-image: url("../../assets/imgs/dogancan-ozturan-640.jpg");
+        background: linear-gradient(180deg,rgba(45,120,140,0.50) 25%,rgba(47,126,150,0.25) 100%), url("../../assets/imgs/dogancan-ozturan-640.jpg");
         /* Full height */
         height: 100%; 
     
