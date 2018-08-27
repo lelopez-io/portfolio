@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UpperCasePipe } from '@angular/common';
+
 
 
 @Component({
@@ -12,6 +12,9 @@ export class CtaHeroComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+
+  }
 
 }
