@@ -13,6 +13,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LpAboutSkillsComponent } from './lp-about-skills/lp-about-skills.component';
 import { LpInfoComponent } from './lp-info/lp-info.component';
 import { LpPitchComponent } from './lp-pitch/lp-pitch.component';
+import { LpContactComponent } from './lp-contact/lp-contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LpPitchComponent } from './lp-pitch/lp-pitch.component';
     LandingPageComponent,
     LpAboutSkillsComponent,
     LpInfoComponent,
-    LpPitchComponent
+    LpPitchComponent,
+    LpContactComponent
   ],
   imports: [
     BrowserModule,

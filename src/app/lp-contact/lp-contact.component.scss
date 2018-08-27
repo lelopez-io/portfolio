@@ -1,0 +1,76 @@
+// section:nth-of-type(5) {
+//     background: #252934;
+//     color: #fff;
+//     padding-top: 175px;
+// }
+
+#contact {
+    background: linear-gradient(180deg,rgb(159, 186, 196) 25%,rgb(195,210,214) 100%);
+    padding: 0 0 70px;
+    line-height: 11pt;
+    position: relative;
+    }
+
+@media screen and (min-width: 600px) {
+    #contact {
+        line-height: 18pt;
+        padding: 0 0 130px;
+}
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 640px;
+
+
+    /* For text formatting. */
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.4);
+
+    & h2, h4 {
+        color: white
+    }
+    
+    & p {
+        text-align: center;
+    }
+}
+
+.form {
+    margin: 25px auto;
+    max-width: 640px;
+
+    & input, textarea {
+        padding: 1em;
+    }
+
+    & textarea {
+        
+    }
+
+    & .button {
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif!important;
+        font-size: .55em;
+        font-weight: 200;
+        letter-spacing: .2em;
+        margin: 2em auto;
+        padding: 0 2em;
+        color: white;
+        background: #6eba01;
+        border-radius: 9px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            font-weight: 500;
+            letter-spacing: .25em; 
+            color: #6eba01;
+            background: white;
+            border-radius: unset;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+    
