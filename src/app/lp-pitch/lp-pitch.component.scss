@@ -1,45 +1,63 @@
-.blank-space {
-    padding: 5vh 0;
-    background-color: rgb(253, 253, 253);
-}
-
-.info {
+.text-ctn {
     font-family: "Open Sans",Arial,sans-serif;
-    font-weight: 500;  
-    max-width: 450px;
-    margin-left: auto;
+    font-weight: 500;
+    
+    max-width: 80%; 
+    padding: 0;
+    margin: 0 auto;  
+    
+    & * {
+        text-align: center;
+    }  
 }
 
-    .bg2::after {
-        // Change Background Here
-        background: linear-gradient(180deg,rgba(45,120,140,0.50) 25%,rgba(47,126,150,0.25) 100%), url("../../assets/imgs/network.jpg") no-repeat right; 
-        margin: 0 -25% 0 25%;
+
+@media only screen and (min-width: 960px) {
+    .text-ctn {
+        max-width: 450px;
     }
-    
-    .parallax-bkg-half {
-      /* Needed for children to be absolutely positioned relative to the parent. */
-      position: relative;
-      /* The height of the container. Must be set */
-      height: 75vh;
-      max-height: 350px;
-    
-      &::after {
-        /* Display and position the pseudo-element */
-        content: " ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    
-        /* Move the pseudo-element back away from the camera,
-        * then scale it back up to fill the viewport.
-        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-        transform: translateZ(-1px) translateY(25px) scale(1.5);
-    
-        /* Force the background image to fill the whole element. */
-        background-size: 100%;
-        /* Keep the image from overlapping sibling elements. */ 
-        z-index: -1;      
-      }
+
+    .align-right {
+        margin-left: auto;
+        padding-right: 15px;
+
+        & * {
+            text-align: right;
+        }  
     }
+}
+
+
+.bg2::after {
+    // Change Background Here
+    background: linear-gradient(180deg,rgba(45,120,140,0.50) 25%,rgba(47,126,150,0.25) 100%), url("../../assets/imgs/network.jpg") no-repeat right; 
+    margin: 0 -25% 0 25%;
+}
+
+.parallax-bkg-half {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set */
+    height: 75vh;
+    max-height: 350px;
+
+    &::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+    * then scale it back up to fill the viewport.
+    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) translateY(25px) scale(1.5);
+
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;      
+    }
+}

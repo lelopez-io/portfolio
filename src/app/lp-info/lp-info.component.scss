@@ -1,27 +1,32 @@
-.info {
+.text-ctn {
     font-family: "Open Sans",Arial,sans-serif;
     font-weight: 500;
-    text-align: left;
-    max-width: 450px;
-}
-
-.info-txt {
-    padding-left: 15px;
-}
-@media only screen and (max-width: 959px) {
-
-
-    .info-txt {
-        margin: 0 auto;
-        padding: 0;
-        max-width: 80%;
-    }
-
-    .info, .info p {
+    
+    max-width: 80%; 
+    padding: 0;
+    margin: 0 auto;  
+    
+    & * {
         text-align: center;
-        max-width: 100%;
+    }  
+}
+
+@media only screen and (min-width: 960px) {
+    .text-ctn {
+        max-width: 450px;
+    }
+
+    .align-left {
+        margin-right: auto;
+        padding-left: 15px;
+
+        & * {
+            text-align: left;
+        }  
     }
 }
+
+
 
 .bg1::after {
     // Change Background Here
@@ -57,6 +62,3 @@
   }
 }
 
-
-
-  
