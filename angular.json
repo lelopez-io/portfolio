@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/vanilla-tilt/vanilla-tilt.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -78,7 +80,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/vanilla-tilt/vanilla-tilt.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

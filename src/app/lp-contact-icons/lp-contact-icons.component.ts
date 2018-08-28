@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { VanillaTilt } from 'vanilla-tilt';
-import { init } from 'vanilla-tilt';
+import * as VanillaTilt from 'vanilla-tilt';
 
 
 
@@ -15,11 +14,11 @@ export class LpContactIconsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const li: NodeListOf<HTMLElement> = document.querySelectorAll('.logo');
+    const li: NodeListOf<HTMLElement> = document.querySelectorAll('.tilt-ctn');
     const liArray: HTMLElement[] = Array.prototype.slice.call(li);
 
 
-    init( liArray, {
+    (<any>VanillaTilt).init( liArray, {
       max: .05,
       perspective: 10000,
       speed: 100,
