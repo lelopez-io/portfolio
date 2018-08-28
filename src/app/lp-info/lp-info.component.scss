@@ -27,13 +27,18 @@
 .parallax-bkg-half {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  /* The height of the container. Must be set */
   height: 75vh;
   max-height: 350px;
 
-  &::after, &:after {
-    max-height: 350px;
+  &:after {
+    // Change Background Here
+    background: linear-gradient(180deg,rgba(45,120,140,0.50) 25%,rgba(47,126,150,0.25) 100%), url("../../assets/imgs/igor-ovsyannykov-329196.jpg") no-repeat right; 
     margin: 0 25% 0 -25%;
+}
+
+  &::after, &:after {
+    // Shouldn't have to mess with these.
 
     /* Display and position the pseudo-element */
     content: " ";
@@ -46,26 +51,12 @@
     /* Move the pseudo-element back away from the camera,
     * then scale it back up to fill the viewport.
     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) scale(1.5);
+    transform: translateZ(-1px) translateY(35px) scale(1.5);
 
     /* Force the background image to fill the whole element. */
     background-size: 100%;
     /* Keep the image from overlapping sibling elements. */ 
-    z-index: -1;
-        
-        
-  }
-
-
-  &:after {
-    background: linear-gradient(180deg,rgba(45,120,140,0.50) 25%,rgba(47,126,150,0.25) 100%), url("../../assets/imgs/igor-ovsyannykov-329196.jpg") no-repeat right; 
-
-    /* Move the pseudo-element back away from the camera,
-    * then scale it back up to fill the viewport.
-    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) translateY(35px) scale(1.5);
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
+    z-index: -1;      
   }
 }
 
