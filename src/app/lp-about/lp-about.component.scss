@@ -1,9 +1,30 @@
+.section-ctn {
+    max-width: 80%;
+}
+
+.text-ctn {
+    & * {
+        text-align: left;
+    }  
+}
+
+
 .about-p {
-    padding-right: 20px;
+    
     margin-bottom: 1.2em;
 }
+@media only screen and (min-width: 960px) {
+    .section-ctn {
+        max-width: 960px;
+    }
+    
+    .about-p {
+        padding-right: 20px;
+    }
+}
+
 @media only screen and (max-width: 959px) {
-    .about-ctn {
+    .align-left {
         text-align: left;
     }
 }

@@ -3,11 +3,11 @@
     font-weight: 500;
     
     max-width: 80%; 
-    padding: 0;
+    padding-left: 25px;
     margin: 0 auto;  
     
     & * {
-        text-align: center;
+        text-align: left;
     }  
 }
 
@@ -19,6 +19,8 @@
 
     .align-right {
         margin-left: auto;
+        margin-right: 0;
+        padding: 0;
         padding-right: 15px;
 
         & * {
